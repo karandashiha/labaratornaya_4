@@ -9,23 +9,29 @@
         .header {
             height: 50px;
             background: rgb(128, 41, 41);
-            /* opacity: 0.7;
-           Значение прозрачности 
-            filter: alpha(Opacity=70);*/
-            /* Прозрачность в IE */
+
         }
 
         /*СТИЛИЗУЕМ ССЫЛКИ topnav */
         .topnav a {
-            font: 25px sans-serif;
-            display: inline;
-            color: #fdce4b;
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
             padding: 14px 16px;
             text-decoration: none;
-
-
         }
 
+
+
+        /*Рамка нижних ССЫЛКОК topnav 
+        .b {
+            border: 2px solid #868372;
+            border-radius: 10px;
+            width: 120px;
+            text-decoration: none;
+
+        }*/
 
         /* Изменяем цвет при навидении  */
         .topnav a:hover {
@@ -35,18 +41,42 @@
 
         /*СТИЛЬ СОДЕРЖИМОГО */
         .content {
-            padding: 15px;
-            /* Поля вокруг текста */
+            padding: 5px;
+            border-radius: 15px;
             background: #94907d;
-            /* Цвет фона */
             margin: 0 auto;
-            /* Выравниваем слой по центру */
             width: 80%;
-            /* Ширина слоя */
             opacity: 1;
             /*Значение прозрачности*/
             filter: alpha(Opacity=60);
             /* Прозрачность в IE */
+            text-align: start;
+
+        }
+
+        /*СТИЛЬ СОДЕРЖИМОГО верхней таблици */
+        .content-a {
+            padding: 5px;
+            border-radius: 0 30px;
+            background: #94907d;
+            color: white;
+            width: 60px;
+            height: 60px;
+            opacity: 0.7;
+            /*Значение прозрачности*/
+            filter: alpha(Opacity=70);
+            /* Прозрачность в IE */
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+        }
+
+        .round {
+            width: 10em;
+            height: 10em;
+            border: 1px solid rgb(0, 0, 0);
+            border-radius: 50%;
+            background: #94907d;
+            color: white;
 
         }
 
@@ -54,6 +84,7 @@
         .footer {
             height: 50px;
             background: rgb(128, 41, 41);
+            color: white;
 
         }
 
@@ -73,6 +104,13 @@
 
         .table-content {
             border: 1px;
+            width: 200px;
+            margin: auto;
+
+        }
+
+        .table-content-a {
+            border: 1px;
             width: 400px;
             margin: auto;
         }
@@ -84,11 +122,12 @@
 
         .table-qwe {
             position: relative;
+            height: 50%;
         }
 
         .p-qwe {
             position: absolute;
-            left: 15%;
+            left: 30%;
             bottom: 60%;
         }
 
@@ -109,6 +148,20 @@
             left: 300%;
             bottom: 0%;
         }
+
+        .p-asf {
+            position: absolute;
+            bottom: 40%;
+            left: 70%;
+        }
+
+        /*Декор верхней талици*/
+        .decorete-table {
+            position: absolute;
+            top: 8%;
+            left: 70%;
+
+        }
     </style>
 </head>
 
@@ -125,41 +178,40 @@
                     <a href="#">Кнопка</a>
                     <a href="#">Кнопка</a>
                 </div>
-                <div class="fig"><img src="image/optimized_large_thumb_stage.jpg" alt="" width="10%" height="author">
-                </div>
+                <!--<div class="fig"><img src="image/optimized_large_thumb_stage.jpg" alt="" width="10%" height="author">
+                </div>-->
             </td>
         </tr>
-        <table class="table-qwe">
 
+        <table class="table-qwe">
             <tr>
                 <td>
                     <img class="img" src="image/woman_kickboxing.jpg" width="100%">
+                    <div class="decorete-table">
+                        <table class="table-content-a">
+                            <tr>
+                                <td class="content-a">
+                                    <h1>Cпорт клуб "Strong Spirit"</h1>
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, atque enim vero
+                                        ullam
+                                        commodi
+                                        dicta ex,
+                                        delectus odit modi?</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
                     <div class="p-qwe">
                         <table class="table-content">
                             <tr>
                                 <td class="content">
 
-                                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                                        molestiae asperiores
-                                        sequi?
-                                        Quos
-                                        vitae
-                                        quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus aperiam
-                                        saepe
-                                        iste
-                                        unde
-                                        adipisci vel iure mollitia nesciunt.Lorem ipsum dolor, sit amet consectetur
-                                        adipisicing elit. Eius
-                                        molestiae asperiores
-                                        sequi?
-                                        Quos
-                                        vitae
-                                        quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus aperiam
-                                        saepe
-                                        iste
-                                        unde
-                                        adipisci vel iure mollitia nesciunt.</p>
-                                    <div class="topnav"> <a href="#">Кнопка</a></div>
+                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
+                                        nobis
+                                        architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                        ullam
+                                        dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
+                                    <div class="topnav "> <a href="#">Кнопка</a></div>
 
                                 </td>
                             </tr>
@@ -169,29 +221,12 @@
                                 <tr>
                                     <td class="content">
 
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.Lorem ipsum dolor, sit amet consectetur
-                                            adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.</p>
-                                        <div class="topnav"> <a href="#">Кнопка</a></div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
+                                            nobis
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            ullam
+                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
+                                        <div class="topnav "> <a href="#">Кнопка</a></div>
 
                                     </td>
                                 </tr>
@@ -202,29 +237,12 @@
                                 <tr>
                                     <td class="content">
 
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.Lorem ipsum dolor, sit amet consectetur
-                                            adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.</p>
-                                        <div class="topnav"> <a href="#">Кнопка</a></div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
+                                            nobis
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            ullam
+                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
+                                        <div class="topnav "> <a href="#">Кнопка</a></div>
 
                                     </td>
                                 </tr>
@@ -235,35 +253,30 @@
                                 <tr>
                                     <td class="content">
 
-                                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.Lorem ipsum dolor, sit amet consectetur
-                                            adipisicing elit. Eius
-                                            molestiae asperiores
-                                            sequi?
-                                            Quos
-                                            vitae
-                                            quia doloribus. Quibusdam doloremque cumque molestiae, necessitatibus
-                                            aperiam
-                                            saepe
-                                            iste
-                                            unde
-                                            adipisci vel iure mollitia nesciunt.</p>
-                                        <div class="topnav"> <a href="#">Кнопка</a></div>
+                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
+                                            nobis
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            ullam
+                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
+                                        <div class="topnav "> <a href="#">Кнопка</a></div>
 
                                     </td>
                                 </tr>
                             </table>
                         </div>
                     </div><img src="image/BENEFITS-OF-BOXING.jpg" width="100%">
+                    <div class="p-asf">
+                        <table class="table-content">
+                            <tr>
+                                <td class="content round">
+
+                                    <p>
+                                    <h3>Текст</h3>
+                                    </p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
         </table>
     </table>
     <table class="table-footer">
