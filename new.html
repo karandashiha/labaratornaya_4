@@ -3,19 +3,35 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Решетник Катерина ІПЗ19-1(2)">
+
     <title> Сильный дух</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
     <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
         /*ШАПКА*/
         .header {
-            height: 80px;
+            height: 70%;
             background: rgb(128, 41, 41);
-
+            line-height: 70%;
         }
 
         /*СТИЛИЗУЕМ ССЫЛКИ topnav */
         .topnav a {
             position: relative;
             left: 40%;
+            top: 10px;
             border: 2px solid rgb(134, 74, 74);
             padding: 4px 16px;
             color: rgb(255, 255, 255);
@@ -39,7 +55,7 @@
 
         .menu {
             position: relative;
-            bottom: 30%;
+            bottom: 15%;
             left: 3%;
             color: white;
             font-size: 20px;
@@ -49,11 +65,11 @@
 
         /*СТИЛЬ СОДЕРЖИМОГО */
         .content {
-            padding: 5px;
+            padding: 15px;
             border-radius: 15px;
             background: #94907d;
             margin: 0 auto;
-            width: 80%;
+            width: 50%;
             opacity: 1;
             /*Значение прозрачности*/
             filter: alpha(Opacity=60);
@@ -64,13 +80,13 @@
 
         /*СТИЛЬ СОДЕРЖИМОГО верхней таблици */
         .content-a {
-            padding: 5px;
+            padding: 15px;
             border-radius: 0 30px;
             background: #94907d;
-            color: white;
+            color: rgb(0, 0, 0);
             width: 60px;
             height: 60px;
-            opacity: 0.7;
+            opacity: 0.9;
             /*Значение прозрачности*/
             filter: alpha(Opacity=70);
             /* Прозрачность в IE */
@@ -90,52 +106,65 @@
 
         /*СТИЛЬ footer*/
         .footer {
-            height: 50px;
+            height: 50%;
             background: rgb(128, 41, 41);
             color: white;
-
         }
 
-        /*.background {
+        .background {
             background: rgb(128, 41, 41);
-        }*/
+        }
 
-        /*Выравниане картинки в шапке*/
+        .img {
+            width: 100%;
+            height: auto;
+            line-height: 100%;
+        }
+
+        /*Выравниане картинки в шапке
         .fig {
             text-align: end;
-        }
+        }*/
 
         .table-heder {
             border: 1px;
             width: 100%;
+            margin: 0px;
         }
 
         .table-content {
             border: 1px;
-            width: 200px;
+            width: 300px;
+            height: 50px;
             margin: auto;
 
         }
 
         .table-content-a {
             border: 1px;
-            width: 400px;
+            width: 500px;
             margin: auto;
+
         }
 
         .table-footer {
-            border: 1px;
             width: 100%;
+            height: 70%;
+            position: relative;
+            top: -15px;
+            margin: 25px;
         }
 
         .table-qwe {
             position: relative;
             height: 50%;
+            margin: 20px;
+
         }
 
         .p-qwe {
             position: absolute;
-            left: 25%;
+            left: 10%;
             bottom: 60%;
         }
 
@@ -166,8 +195,9 @@
         /*Декор верхней талици*/
         .decorete-table {
             position: absolute;
-            top: 8%;
-            left: 70%;
+            top: 5%;
+            left: 60%;
+            right: 30%;
 
         }
     </style>
@@ -175,12 +205,15 @@
 
 <body class="background ">
     <!--ШАПКА-->
-
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-5"></div>
+        </div>
+    </div>
     <table class="table-heder">
         <tr>
             <td class="header">
                 <div class="topnav">
-
                     <a href="#">Кнопка</a>
                     <a href="#">Кнопка</a>
                     <a href="#">Кнопка</a>
@@ -195,13 +228,14 @@
         <table class="table-qwe">
             <tr>
                 <td>
-                    <img class="img" src="image/woman_kickboxing.jpg" width="100%">
+                    <img class="img" src="image/woman_kickboxing.jpg">
                     <div class="decorete-table">
                         <table class="table-content-a">
                             <tr>
                                 <td class="content-a">
                                     <h1>Cпорт клуб "Strong Spirit"</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, atque enim vero
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, atque enim
+                                        vero
                                         ullam
                                         commodi
                                         dicta ex,
@@ -231,7 +265,8 @@
 
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
                                             nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
+                                            quasi
                                             ullam
                                             dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
                                         <button>Кнопка</button>
@@ -246,7 +281,8 @@
 
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
                                             nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
+                                            quasi
                                             ullam
                                             dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
                                         <button>Кнопка</button>
@@ -261,7 +297,8 @@
 
                                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
                                             nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
+                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
+                                            quasi
                                             ullam
                                             dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
                                         <button>Кнопка</button>
@@ -269,7 +306,7 @@
                                 </tr>
                             </table>
                         </div>
-                    </div><img src="image/BENEFITS-OF-BOXING.jpg" width="100%">
+                    </div><img class="img" src="image/BENEFITS-OF-BOXING.jpg">
                     <div class="p-asf">
                         <table class="table-content">
                             <tr>
@@ -286,7 +323,7 @@
     </table>
     <table class="table-footer">
         <tr>
-            <td class="footer" colspan="2">
+            <td class="footer">
                 <p>Контакты:<br>тел.321-654<br> ул.Байкальская 7<br>boxingua@gmail.com</p>
             </td>
         </tr>
