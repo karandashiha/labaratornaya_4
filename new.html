@@ -3,332 +3,144 @@
 <head>
     <meta charset="utf-8" />
     <meta name="author" content="Решетник Катерина ІПЗ19-1(2)">
-
-    <title> Сильный дух</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-        crossorigin="anonymous"></script>
-    <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-        }
-
-        /*ШАПКА*/
-        .header {
-            height: 70%;
-            background: rgb(128, 41, 41);
-            line-height: 70%;
-        }
-
-        /*СТИЛИЗУЕМ ССЫЛКИ topnav */
-        .topnav a {
-            position: relative;
-            left: 40%;
-            top: 10px;
-            border: 2px solid rgb(134, 74, 74);
-            padding: 4px 16px;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        /* Изменяем цвет при навидении  */
-        .topnav a:hover {
-            background-color: #beaa4d;
-            color: #29210a;
-        }
-
-        button {
-            position: relative;
-            left: 30%;
-            background: #94907d;
-            padding: 0 1rem;
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-        }
-
-        .menu {
-            position: relative;
-            bottom: 15%;
-            left: 3%;
-            color: white;
-            font-size: 20px;
-        }
-
-
-
-        /*СТИЛЬ СОДЕРЖИМОГО */
-        .content {
-            padding: 15px;
-            border-radius: 15px;
-            background: #94907d;
-            margin: 0 auto;
-            width: 50%;
-            opacity: 1;
-            /*Значение прозрачности*/
-            filter: alpha(Opacity=60);
-            /* Прозрачность в IE */
-            text-align: start;
-
-        }
-
-        /*СТИЛЬ СОДЕРЖИМОГО верхней таблици */
-        .content-a {
-            padding: 15px;
-            border-radius: 0 30px;
-            background: #94907d;
-            color: rgb(0, 0, 0);
-            width: 60px;
-            height: 60px;
-            opacity: 0.9;
-            /*Значение прозрачности*/
-            filter: alpha(Opacity=70);
-            /* Прозрачность в IE */
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            text-align: center;
-        }
-
-        .round {
-            width: 10em;
-            height: 10em;
-            border: 1px solid rgb(0, 0, 0);
-            border-radius: 50%;
-            background: #94907d;
-            color: white;
-
-        }
-
-        /*СТИЛЬ footer*/
-        .footer {
-            height: 50%;
-            background: rgb(128, 41, 41);
-            color: white;
-        }
-
-        .background {
-            background: rgb(128, 41, 41);
-        }
-
-        .img {
-            width: 100%;
-            height: auto;
-            line-height: 100%;
-        }
-
-        /*Выравниане картинки в шапке
-        .fig {
-            text-align: end;
-        }*/
-
-        .table-heder {
-            border: 1px;
-            width: 100%;
-            margin: 0px;
-        }
-
-        .table-content {
-            border: 1px;
-            width: 300px;
-            height: 50px;
-            margin: auto;
-
-        }
-
-        .table-content-a {
-            border: 1px;
-            width: 500px;
-            margin: auto;
-
-        }
-
-        .table-footer {
-            width: 100%;
-            height: 70%;
-            position: relative;
-            top: -15px;
-            margin: 25px;
-        }
-
-        .table-qwe {
-            position: relative;
-            height: 50%;
-            margin: 20px;
-
-        }
-
-        .p-qwe {
-            position: absolute;
-            left: 10%;
-            bottom: 60%;
-        }
-
-        .p-rty {
-            position: absolute;
-            left: 100%;
-            bottom: 0%;
-        }
-
-        .p-uio {
-            position: absolute;
-            left: 200%;
-            bottom: 0%;
-        }
-
-        .p-asd {
-            position: absolute;
-            left: 300%;
-            bottom: 0%;
-        }
-
-        .p-asf {
-            position: absolute;
-            bottom: 40%;
-            left: 70%;
-        }
-
-        /*Декор верхней талици*/
-        .decorete-table {
-            position: absolute;
-            top: 5%;
-            left: 60%;
-            right: 30%;
-
-        }
-    </style>
+    <title> Сильный дух</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 
-<body class="background ">
-    <!--ШАПКА-->
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-5"></div>
-        </div>
-    </div>
-    <table class="table-heder">
-        <tr>
-            <td class="header">
-                <div class="topnav">
-                    <a href="#">Кнопка</a>
-                    <a href="#">Кнопка</a>
-                    <a href="#">Кнопка</a>
-                    <a href="#">Кнопка</a>
+<body>
+    <!--  <nav class="navbar navbar-expand-md navbar-default sticky-top">
+        <div class="container-fluid"></div>
+        <a href="#" class="navbar-brad">
+            <img src="image/boxing.jpg">
+        </a>-->
+    <!--<button type="button" class="btn btn-outline-light text-light">
+            <ul class=" navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">Меню</a>
+                </li>
+            </ul>
+        </button>
+        <button type="button" class="btn btn-outline-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">Кнопка</a>
+                </li>
+            </ul>
+        </button>
+        <button type="button" class="btn btn-outline-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">Кнопка</a>
+                </li>
+            </ul>
+        </button>
+        <button type="button" class="btn btn-outline-light">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item ">
+                    <a href="#" class="nav-link">Кнопка</a>
+                </li>
+            </ul>
+        </button></nav>-->
+    <header class="header">
+        <div class="header__top-line">
+            <div class="container">
+                <div class="menu">&#9776;</div>
+                <nav class="header__nav">
+                    <a href="#" class="header__nav-link">Кнопка</a>
+                    <a href="#" class="header__nav-link">Кнопка</a>
+                    <a href="#" class="header__nav-link">Кнопка</a>
+                    <a href="#" class="header__nav-link">Кнопка</a>
+                </nav>
+                <div class="header__logo">
+                    <img src="image/boxing.jpg" class="header__logo-img">
                 </div>
-                <!-- <div class="fig"><img src="image/kp48r55qchofghdjqjwze.jpg" alt="" width="10%" height="author">
-                </div>-->
-                <div class="menu">Меню</div>
-            </td>
-        </tr>
+            </div>
+        </div>
+    </header>
 
-        <table class="table-qwe">
-            <tr>
-                <td>
-                    <img class="img" src="image/woman_kickboxing.jpg">
-                    <div class="decorete-table">
-                        <table class="table-content-a">
-                            <tr>
-                                <td class="content-a">
-                                    <h1>Cпорт клуб "Strong Spirit"</h1>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi, atque enim
-                                        vero
-                                        ullam
-                                        commodi
-                                        dicta ex,
-                                        delectus odit modi?</p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <div class="p-qwe">
-                        <table class="table-content">
-                            <tr>
-                                <td class="content">
 
-                                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
-                                        nobis
-                                        architecto magni ut officia, fugiat deserunt nulla ex officiis, rem quasi
-                                        ullam
-                                        dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
-                                    <button>Кнопка</button>
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="p-rty">
-                            <table class="table-content">
-                                <tr>
-                                    <td class="content">
 
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
-                                            nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
-                                            quasi
-                                            ullam
-                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
-                                        <button>Кнопка</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="p-uio">
-                            <table class="table-content">
-                                <tr>
-                                    <td class="content">
 
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
-                                            nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
-                                            quasi
-                                            ullam
-                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
-                                        <button>Кнопка</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                        <div class="p-asd">
-                            <table class="table-content">
-                                <tr>
-                                    <td class="content">
+    <section class="info">
+        <div class="container">
+            <!-- <section class="table-cotenet-a"></section>class="header__title"class="header__subtitle"-->
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <h1><b class="header__title">Cпорт клуб "Strong Spirit"</b></h1>
+                            <p class="header__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
+                                laboriosam nam quibusdam aperiam similique? Tempore, qui inventore quasi, in unde
+                                soluta asperiores rerum dignissimos saepe, sit minus maiores nobis quisquam.</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
 
-                                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias repellat
-                                            nobis
-                                            architecto magni ut officia, fugiat deserunt nulla ex officiis, rem
-                                            quasi
-                                            ullam
-                                            dolorem voluptatibus perferendis? Exercitationem nemo sint quisquam!</p>
-                                        <button>Кнопка</button>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div><img class="img" src="image/BENEFITS-OF-BOXING.jpg">
-                    <div class="p-asf">
-                        <table class="table-content">
-                            <tr>
-                                <td class="content round">
+            <div class="info__inner">
+                <div class="info__item">
+                    <p class="info__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit magnam nam neque
+                        quas suscipit! Repudiandae reprehenderit neque dolorem pariatur?</p>
+                    <a href="#" class="info__btn">
+                        Кнопка
+                    </a>
+                </div>
 
-                                    <p>
-                                    <h3>Текст</h3>
-                                    </p>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-        </table>
-    </table>
-    <table class="table-footer">
-        <tr>
-            <td class="footer">
+                <div class="info__item">
+                    <p class="info__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit magnam nam neque
+                        quas suscipit! Repudiandae reprehenderit neque dolorem pariatur?</p>
+                    <a href="#" class="info__btn">
+                        Кнопка
+                    </a>
+                </div>
+                <div class="info__item">
+                    <p class="info__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit magnam nam neque
+                        quas suscipit! Repudiandae reprehenderit neque dolorem pariatur?</p>
+                    <a href="#" class="info__btn">
+                        Кнопка
+                    </a>
+                </div>
+                <div class="info__item">
+                    <p class="info__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi reprehenderit magnam nam neque
+                        quas suscipit! Repudiandae reprehenderit neque dolorem pariatur?</p>
+                    <a href="#" class="info__btn">
+                        Кнопка
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="features__inner">
+                <div class="features__item">
+                    <p class="features__text">
+                        <br>Boxing
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
                 <p>Контакты:<br>тел.321-654<br> ул.Байкальская 7<br>boxingua@gmail.com</p>
-            </td>
-        </tr>
-    </table>
-    </table>
+
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
